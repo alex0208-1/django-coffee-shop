@@ -52,7 +52,7 @@ class Grinding(TimestampModel):
 
 class Coffee(TimestampModel):
     name = models.CharField('名稱', max_length=20, unique=True)
-    weight = models.PositiveIntegerField('重疊')
+    weight = models.PositiveIntegerField('重量')
     taste = models.TextField('味道')
     description = models.TextField('描述')
     roast = models.CharField('烘焙程度', max_length=10, choices=Roast.choices)
